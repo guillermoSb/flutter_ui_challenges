@@ -100,6 +100,48 @@ class LoginScreen01 extends StatelessWidget {
                       const SizedBox(
                         height: 12,
                       ),
+                      TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Email address',
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: colors.secondary,
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(12),
+                              topRight: Radius.circular(12),
+                            ),
+                          ),
+                        ),
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Password',
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: colors.secondary,
+                              width: 1,
+                            ),
+                            borderRadius: const BorderRadius.only(
+                              bottomLeft: Radius.circular(12),
+                              bottomRight: Radius.circular(12),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 24,
+                      ),
+                      Text(
+                        'Forgot password?',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 24,
+                      ),
                       LoginScreen01Button(
                         label: 'Continue',
                         color: colors.primary,
@@ -108,6 +150,28 @@ class LoginScreen01 extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+            ),
+          ),
+          const Positioned(
+            bottom: 24,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Not a member?'),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Text(
+                    'Create an account',
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
               ),
             ),
           )
