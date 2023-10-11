@@ -9,6 +9,12 @@ final List<ColorScheme> schemes = [
     onSecondary: Colors.black,
     tertiary: Color.fromRGBO(116, 118, 131, 1),
   ),
+  const ColorScheme.light().copyWith(
+      primary: const Color.fromRGBO(14, 85, 250, 1),
+      onPrimary: Colors.white,
+      primaryContainer: const Color.fromRGBO(67, 136, 255, 1),
+      secondary: const Color.fromRGBO(11, 95, 251, 1),
+      onSecondary: Colors.white),
 ];
 
 class AppThemeNotifier extends StateNotifier<ThemeData> {

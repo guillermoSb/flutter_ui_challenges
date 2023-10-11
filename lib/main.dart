@@ -16,6 +16,7 @@ class MyApp extends ConsumerWidget {
     final appTheme = ref.watch(appThemeProvider);
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: appTheme,
       home: const HomeScreen(),
     );
